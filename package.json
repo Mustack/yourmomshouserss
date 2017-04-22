@@ -1,0 +1,10 @@
+{
+  "name": "yourmomsrss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mustack <jl.martin1990@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  }
+}
