@@ -5,6 +5,7 @@
   "author": "Mustack <jl.martin1990@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^1.6.3"
+    "node-fetch": "^1.6.3",
+    "xml2js": "^0.4.17"
   }
 }
