@@ -1,5 +1,7 @@
-const aGreaterThanB = 1;
-const aLessThanB = -1;
+const moment = require('moment');
+
+const aGreaterThanB = -1;
+const aLessThanB = 1;
 
 function getNum(episode) {
   return Number(episode.title[0].match(/\d+/g)[0]);
@@ -20,7 +22,7 @@ module.exports = {
     }
 
     if (a.pubDate[0] !== 'Mon, 17 Oct 2016 00:00:00 +0000' && b.pubDate[0] !== 'Mon, 17 Oct 2016 00:00:00 +0000') {
-      return undefined;
+      return moment(a.pubDate[0]) > moment(b.pubDate[0]) ? aGreaterThanB : aLessThanB;
     }
   }
 }
